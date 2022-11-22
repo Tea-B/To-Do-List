@@ -1,0 +1,46 @@
+.add-div {
+  padding: 10px 50px;
+}
+.add-div-input {
+  width: 80%;
+  height: 50px;
+  font-size: 30px;
+  border: 0px solid;
+}
+.add-div-input:focus {
+  outline: none;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0, 9px 0px;
+  border-bottom: 1px rgba(128, 128, 128, 0.7) solid;
+}
+
+.inline-b {
+  padding: 15px 50px;
+  display: inline-block;
+}
+
+.scratch {
+  text-decoration: line-through;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+}
+
+.opciones {
+  width: 25px;
+  height: 25px;
+  margin: 0px 10px;
+  font-size: 18px;
+}
+
+li {
+  font-size: 20px;
+}/*# sourceMappingURL=list.component.css.map */

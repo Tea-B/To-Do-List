@@ -1,0 +1,18 @@
+<div class="flex add-div">
+  <input type="text" class="add-div-input" placeholder="Write your next task here..." [(ngModel)]="newChore">
+  <button (click)="addChore(newChore)">&#8194;Add chore&#8194;</button>
+</div>
+
+<ul>
+  <li *ngFor="let chore of chores; let index = index" [ngClass]="{'scratch': chore.isDone}" class="flex">
+    <div class="inline-b">
+      <input type="checkbox" class="checkbox" [(ngModel)]="chore.isDone">
+      {{chore.title}}
+    </div>
+    <div class="inline-b">
+      <button class="opciones" *ngIf="index >= 1" (click)="upPosition(index)">&#8679;</button>
+      <button class="opciones" *ngIf="index < chores.length - 1" (click)="downPosition(index)">&#8681;</button>
+      <button class="opciones" (click)="delete(index)">x</button>
+    </div>
+  </li>
+</ul>
